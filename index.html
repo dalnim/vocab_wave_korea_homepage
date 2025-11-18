@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Wave - Korean Vocabulary Game App for English-Speaking Adults</title>
+    <link rel="stylesheet" href="styles_boy.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MW42LH8626"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MW42LH8626');
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">🚀 VocabWave</div>
+                    <div class="tagline" data-i18n="tagline">Learn Korean Words Through Games</div>
+                </div>
+                <div class="language-selector">
+                    <select id="languageSelect" class="language-select">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="zh-CN">中文 (简体)</option>
+                        <option value="zh-TW">中文 (繁體)</option>
+                        <option value="ja">日本語</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="th">ไทย</option>
+                        <option value="id">Bahasa Indonesia</option>
+                        <option value="tl">Filipino</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
+                        <option value="ru">Русский</option>
+                        <option value="pl">Polski</option>
+                        <option value="pt">Português</option>
+                        <option value="ar">العربية</option>
+                        <option value="ko">한국어</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="mobile-preview">
+                    <div class="mobile-frame">
+                        <div class="mobile-screen">
+                            <video autoplay muted loop playsinline class="game-video">
+                                <source src="./assets/videos/vocab_wave.mp4" type="video/mp4">
+                                <div class="video-placeholder">
+                                    📱 Mobile Screen<br>
+                                    🎥 Video Placeholder<br>
+                                    <small>(e.g., gameplay video)</small>
+                                </div>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <h1 data-i18n="hero.title">Learn Korean Words Naturally<br>While Playing Games</h1>
+                <p data-i18n="hero.subtitle">Boost your Korean vocabulary with fun and engaging games</p>
+                <div class="hero-download-buttons">
+                    <a href="https://apps.apple.com/app/vocab-wave/id6747004176" class="app-store-btn hero-app-store-btn" target="_blank">
+                        <img src="./assets/images/AppStore.png" alt="Download on the App Store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.araonesoft.vocabwave" class="google-play-btn hero-google-play-btn" target="_blank">
+                        <img src="./assets/images/GooglePlay.png" alt="Get it on Google Play" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Problem Section -->
+        <section class="section problem-section">
+            <div class="container">
+                <h2 data-i18n="problems.title">Problems with Traditional Korean Vocabulary Learning</h2>
+                <div class="features">
+                    <div class="feature-card bounce-in">
+                        <div class="feature-icon">😴</div>
+                        <h3 data-i18n="problems.boring.title">Boring Memorization</h3>
+                        <p data-i18n="problems.boring.text">Memorizing Korean words is just too boring.😢</p>
+                    </div>
+                    <div class="feature-card bounce-in">
+                        <div class="feature-icon">⏰</div>
+                        <h3 data-i18n="problems.time.title">Lack of Time</h3>
+                        <p data-i18n="problems.time.text">It's hard to find time to study Korean in your busy daily life.😰</p>
+                    </div>
+                    <div class="feature-card bounce-in">
+                        <div class="feature-icon">😤</div>
+                        <h3 data-i18n="problems.motivation.title">Lack of Motivation</h3>
+                        <p data-i18n="problems.motivation.text">Korean study is so dull that it's hard to keep going.😤</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 게임 플레이 미리보기 섹션 -->
+        <section class="screenshots">
+            <div class="container">
+                <h2 data-i18n="screenshots.title">Get Stronger as You Solve Korean Word Quizzes</h2>
+                <div class="screenshots-grid">
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <img src="./assets/images/screenshots/1.png" alt="Enemies approaching screenshot" />
+                        </div>
+                        <h4 data-i18n="screenshots.enemies.title">Enemies Approaching</h4>
+                        <p data-i18n="screenshots.enemies.text">What should I do?</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <img src="./assets/images/screenshots/2.png" alt="Quiz screenshot" />
+                        </div>
+                        <h4 data-i18n="screenshots.quiz.title">Korean Words, Save Me!</h4>
+                        <p data-i18n="screenshots.quiz.text">Answer quickly to win</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-image">
+                            <img src="./assets/images/screenshots/3.png" alt="Attack screenshot" />
+                        </div>
+                        <h4 data-i18n="screenshots.attack.title">Powerful Attack!</h4>
+                        <p data-i18n="screenshots.attack.text">So satisfying!</p>
+                    </div>
+                </div>
+                <h2 class="screenshots-subtitle" data-i18n="screenshots.subtitle"><br>As enemies get stronger, Korean word quizzes appear more frequently</h2>
+            </div>
+        </section>
+
+        <section id="features" class="features game-features">
+            <div class="container">
+                <h2 data-i18n="features.title">Game Features ✨</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 data-i18n="features.immersion.title">Powerful Immersion</h3>
+                        <p data-i18n="features.immersion.text">You'll naturally solve many Korean word quizzes to defeat enemies.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3 data-i18n="features.repetition.title">Scientific Spaced Repetition</h3>
+                        <p data-i18n="features.repetition.text">Words are reviewed before you forget them, moving into long-term memory</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💥</div>
+                        <h3 data-i18n="features.achievement.title">Strong Sense of Achievement</h3>
+                        <p data-i18n="features.achievement.text">Feel the thrill of eliminating powerful enemies with a single Korean quiz answer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 사용자 후기 섹션 -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 data-i18n="testimonials.title">💬 User Reviews</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-item">
+                        <p data-i18n="testimonials.review1.text">I never knew learning Korean could be this fun! Other apps were so boring I gave up quickly, but with this game, I can easily learn 100 Korean words a day just by playing!</p>
+                        <div class="testimonial-author" data-i18n="testimonials.review1.author">- John M. (USA, 28)</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p data-i18n="testimonials.review2.text">I'm memorizing Korean words while playing games during my commute. It doesn't feel like studying at all, so I want to keep playing.</p>
+                        <div class="testimonial-author" data-i18n="testimonials.review2.author">- Sarah K. (UK, 32)</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p data-i18n="testimonials.review3.text">Memorizing Korean words used to be so hard, but now the more I play, the more my vocabulary improves and I gain confidence. Highly recommend!</p>
+                        <div class="testimonial-author" data-i18n="testimonials.review3.author">- Michael T. (Canada, 35)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 다운로드 섹션 -->
+    <section class="download-section">
+        <div class="container">
+            <h2 data-i18n="download.title">Start Learning Now!</h2>
+            <div class="download-content">
+                <h3 data-i18n="download.subtitle">Vocab Wave - Learn Korean Easily Even in Your Busy Daily Life</h3>
+                <div class="download-buttons">
+                    <a href="https://apps.apple.com/app/vocab-wave/id6747004176" class="app-store-btn" target="_blank">
+                        <img src="./assets/images/AppStore.png" alt="Download on the App Store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.araonesoft.vocabwave" class="google-play-btn" target="_blank">
+                        <img src="./assets/images/GooglePlay.png" alt="Get it on Google Play" />
+                    </a>
+                    <a href="https://www.reddit.com/r/VocabMaster/comments/1lmao1e/vocab_wave_shoot_em_up_learn_words_fast/" class="download-btn reddit-btn"
+                        target="_blank">
+                        <img src="./assets/images/reddit.png" alt="Reddit" style="height: 60px; width: 180px; object-fit: contain;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AraOneSoft.co.Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
